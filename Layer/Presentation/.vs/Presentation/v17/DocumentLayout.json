@@ -1,0 +1,379 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\LanguageNext\\Presentation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\notes.businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:presentation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\controllers\\hotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:controllers\\hotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\models\\putnoterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:models\\putnoterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\models\\noterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:models\\noterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\models\\noteresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:models\\noteresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|c:\\languagenext\\presentation\\mapping\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CBE6BF8-570A-430D-AA86-FFB3D9B76EA4}|Presentation.csproj|solutionrelative:mapping\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\services\\noteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\interfaces\\inoteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\dto\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\dto\\hashtagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\businessmodel\\emptynote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\services\\hashtagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85651E91-CE83-4C88-9F4E-157F4F21ABCE}|..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj|c:\\languagenext\\notes.businesslayer\\interfaces\\ihashtagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\entities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\entities\\hashtag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\ef\\dbcontextnotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\repositories\\unitofworkef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\repositories\\hashtagrepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\repositories\\noterepos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B377C9-8B2E-41F5-8CEC-101ADC568010}|..\\Notes.DataAccsessLayer\\Notes.DataAccsessLayer.csproj|c:\\languagenext\\notes.dataaccsesslayer\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PutNoteRequest.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Models\\PutNoteRequest.cs",
+              "RelativeDocumentMoniker": "Models\\PutNoteRequest.cs",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Models\\PutNoteRequest.cs",
+              "RelativeToolTip": "Models\\PutNoteRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T22:26:03.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoteRequest.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Models\\NoteRequest.cs",
+              "RelativeDocumentMoniker": "Models\\NoteRequest.cs",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Models\\NoteRequest.cs",
+              "RelativeToolTip": "Models\\NoteRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T22:25:05.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Presentation",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Presentation.csproj",
+              "RelativeDocumentMoniker": "Presentation.csproj",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Presentation.csproj",
+              "RelativeToolTip": "Presentation.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-10T22:23:28.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T17:13:41.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Notes.BusinessLayer",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\Notes.BusinessLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-10T21:23:54.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NoteResponse.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Models\\NoteResponse.cs",
+              "RelativeDocumentMoniker": "Models\\NoteResponse.cs",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Models\\NoteResponse.cs",
+              "RelativeToolTip": "Models\\NoteResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T22:24:03.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AutoMapperProfiles.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Mapping\\AutoMapperProfiles.cs",
+              "RelativeDocumentMoniker": "Mapping\\AutoMapperProfiles.cs",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Mapping\\AutoMapperProfiles.cs",
+              "RelativeToolTip": "Mapping\\AutoMapperProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:56:42.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HotesController.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Presentation\\Controllers\\HotesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HotesController.cs",
+              "ToolTip": "C:\\LanguageNext\\Presentation\\Controllers\\HotesController.cs",
+              "RelativeToolTip": "Controllers\\HotesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T22:14:13.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "INoteService.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\Interfaces\\INoteService.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\Interfaces\\INoteService.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\Interfaces\\INoteService.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\Interfaces\\INoteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:30:05.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NoteDTO.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\DTO\\NoteDTO.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\DTO\\NoteDTO.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\DTO\\NoteDTO.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\DTO\\NoteDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:27:09.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NoteService.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\Services\\NoteService.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\Services\\NoteService.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\Services\\NoteService.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\Services\\NoteService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:43:01.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HashtagDTO.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\DTO\\HashtagDTO.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\DTO\\HashtagDTO.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\DTO\\HashtagDTO.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\DTO\\HashtagDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:26:04.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmptyNote.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\BusinessModel\\EmptyNote.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\BusinessModel\\EmptyNote.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\BusinessModel\\EmptyNote.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\BusinessModel\\EmptyNote.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:25:02.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HashtagService.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\Services\\HashtagService.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\Services\\HashtagService.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\Services\\HashtagService.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\Services\\HashtagService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:32:23.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IHashtagService.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.BusinessLayer\\Interfaces\\IHashtagService.cs",
+              "RelativeDocumentMoniker": "..\\Notes.BusinessLayer\\Interfaces\\IHashtagService.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.BusinessLayer\\Interfaces\\IHashtagService.cs",
+              "RelativeToolTip": "..\\Notes.BusinessLayer\\Interfaces\\IHashtagService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:29:16.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Entities\\Note.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\Entities\\Note.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Entities\\Note.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\Entities\\Note.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T17:08:00.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Hashtag.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Entities\\Hashtag.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\Entities\\Hashtag.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Entities\\Hashtag.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\Entities\\Hashtag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T17:09:20.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DbContextNotes.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\EF\\DbContextNotes.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\EF\\DbContextNotes.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\EF\\DbContextNotes.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\EF\\DbContextNotes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T17:17:49.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UnitOfWorkEF.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Repositories\\UnitOfWorkEF.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\Repositories\\UnitOfWorkEF.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Repositories\\UnitOfWorkEF.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\Repositories\\UnitOfWorkEF.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:10:46.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HashtagRepos.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Repositories\\HashtagRepos.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\Repositories\\HashtagRepos.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Repositories\\HashtagRepos.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\Repositories\\HashtagRepos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:17:40.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "NoteRepos.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Repositories\\NoteRepos.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\Repositories\\NoteRepos.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Repositories\\NoteRepos.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\Repositories\\NoteRepos.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:12:03.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "..\\Notes.DataAccsessLayer\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\LanguageNext\\Notes.DataAccsessLayer\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "..\\Notes.DataAccsessLayer\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:04:50.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
