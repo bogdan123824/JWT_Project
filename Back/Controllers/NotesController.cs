@@ -18,10 +18,10 @@ namespace Notes.Controllers
         private readonly UserManager<IdentityUser> _userManager;
 
         public NotesController(
-            DbContextNotes context,
+            DbContextNotes Notecontext,
             UserManager<IdentityUser> userManager)
         {
-            _context = context;
+            _context = Notecontext;
             _userManager = userManager;
         }
 
@@ -37,9 +37,9 @@ namespace Notes.Controllers
                 return NotFound();
             }
 
-            var currentUserId = await GetUserId();
+            var userId = await GetUserId();
 
-            if (note.UserId != currentUserId)
+            if (note.UserId != userId)
             {
                 return Forbid();
             }
@@ -49,43 +49,43 @@ namespace Notes.Controllers
 
         [HttpPut]
         [Route("{id:Guid}")]
-        public async Task<IActionResult> UpdateNote([FromRoute] Guid id, [FromBody] Back.Model.Notes note)
+        public async Task<IActionResult> UpdateNote([FromRoute] Guid id, [FromBody] Back.Model.Notes notes)
         {
-            var currentUserId = await GetUserId();
+            var userId = await GetUserId();
 
-            var existingNote = await _context.Notes
+            var note = await _context.Notes
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            if (existingNote is null)
+            if (note is null)
             {
                 return NotFound();
             }
 
-            if (existingNote.UserId != currentUserId)
+            if (note.UserId != userId)
             {
                 return Forbid();
             }
 
-            existingNote.Title = note.Title;
-            existingNote.Text = note.Text;
+            note.Title = notes.Title;
+            note.Text = notes.Text;
 
             await _context.SaveChangesAsync();
 
-            return Ok(existingNote); 
+            return Ok(note); 
         }
 
         [HttpPost]
         public async Task<IActionResult> AddNote([FromBody] Back.Model.Notes note)
         {
-            var currentUserId = await GetUserId();
+            var userId = await GetUserId();
 
-            if (currentUserId is null)
+            if (userId is null)
             {
                 return Unauthorized();
             }
 
             note.CreatedAt = DateTime.Now;
-            note.UserId = currentUserId;
+            note.UserId = userId;
 
             await _context.Notes.AddAsync(note);
             await _context.SaveChangesAsync();
@@ -97,22 +97,22 @@ namespace Notes.Controllers
         [Route("{id:Guid}")]
         public async Task<IActionResult> DeleteNote([FromRoute] Guid id)
         {
-            var currentUserId = await GetUserId();
+            var userId = await GetUserId();
 
-            var existingNote = await _context.Notes
+            var note = await _context.Notes
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            if (existingNote is null)
+            if (note is null)
             {
                 return NotFound();
             }
 
-            if (existingNote.UserId != currentUserId)
+            if (note.UserId != userId)
             {
                 return Forbid();
             }
 
-            _context.Notes.Remove(existingNote);
+            _context.Notes.Remove(note);
             await _context.SaveChangesAsync();
 
             return Ok();
@@ -120,17 +120,17 @@ namespace Notes.Controllers
 
         private async Task<string?> GetUserId()
         {
-            var currentUsername = User.Identity?.Name;
+            var username = User.Identity?.Name;
 
-            if (string.IsNullOrEmpty(currentUsername))
+            if (string.IsNullOrEmpty(username))
             {
                 return null;
             }
 
-            var currentUser = await _userManager
-                .FindByNameAsync(currentUsername!);
+            var user = await _userManager
+                .FindByNameAsync(username!);
 
-            return currentUser?.Id;
+            return user?.Id;
         }
     }
 }

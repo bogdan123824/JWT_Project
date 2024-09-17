@@ -20,44 +20,44 @@ namespace Back.Model
         [HttpGet("GetUser")]
         public async Task<IActionResult> GetUsers()
         {
-            var existingUsers = await _userManager.Users.ToListAsync();
-            var usersToSend = new List<object>();
+            var users = await _userManager.Users.ToListAsync();
+            var usersGet = new List<object>();
 
-            foreach (var user in existingUsers)
+            foreach (var user in users)
             {
                 var userRoles = await _userManager.GetRolesAsync(user);
 
-                var userInfo = new
+                var info = new
                 {
                     Id = user.Id,
                     Username = user.UserName,
                     Role = userRoles.Contains(UserRoles.Admin) ? UserRoles.Admin : UserRoles.User
                 };
 
-                usersToSend.Add(userInfo);
+                usersGet.Add(info);
             }
 
-            return Ok(usersToSend); 
+            return Ok(usersGet); 
         }
 
         [HttpPut("UpdateUser")]
         public async Task<IActionResult> EditUser([FromRoute] string id, [FromBody] EditUserModel model)
         {
-            var existingUser = await _userManager.FindByIdAsync(id);
-            if (existingUser == null)
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
             {
                 return NotFound(); 
             }
 
-            existingUser.UserName = model.Username; 
+            user.UserName = model.Username; 
 
             if (model.Role == UserRoles.Admin)
             {
-                await _userManager.AddToRoleAsync(existingUser, UserRoles.Admin);
+                await _userManager.AddToRoleAsync(user, UserRoles.Admin);
             }
             else if (model.Role == UserRoles.User)
             {
-                await _userManager.RemoveFromRoleAsync(existingUser, UserRoles.Admin);
+                await _userManager.RemoveFromRoleAsync(user, UserRoles.Admin);
             }
 
             return Ok(); 
@@ -66,13 +66,13 @@ namespace Back.Model
         [HttpDelete("DeleteUser")]
         public async Task<IActionResult> DeleteUser([FromRoute] string id)
         {
-            var existingUser = await _userManager.FindByIdAsync(id);
-            if (existingUser == null)
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null)
             {
                 return NotFound(); 
             }
 
-            await _userManager.DeleteAsync(existingUser); 
+            await _userManager.DeleteAsync(user); 
 
             return Ok(); 
         }
