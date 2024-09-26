@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HBwuMG5C0cI0LDfUF7vzmV0CbM7MIg719dZu0NLyWVw4CJJLOolm/8E0I53TdAtUnVfppAf6X8hzvAHn8z0sAA==",
+  "dgSpecHash": "GX22H2JLpJFuSunqaHJuhnVzlksm40hxWovoz3WYPJw1fEmjim06scSbf7Ykwx/n6qCMqp3Y3p24gwIKayMZIg==",
   "success": true,
-  "projectFilePath": "C:\\LanguageNext\\Back\\Back.csproj",
+  "projectFilePath": "C:\\Users\\38067\\Documents\\GitHub\\JWT_Project\\Back\\Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\38067\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\38067\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

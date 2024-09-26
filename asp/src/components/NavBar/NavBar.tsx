@@ -7,8 +7,8 @@ function NavBar() {
     const [role, setRole] = useState<string>("");
 
     useEffect(() => {
-        const storageRole = localStorage.getItem("role") || "";
-        setRole(storageRole);
+        const roles = localStorage.getItem("role") || "";
+        setRole(roles);
     }, []);
 
     return (

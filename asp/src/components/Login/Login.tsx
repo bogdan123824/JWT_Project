@@ -5,11 +5,12 @@ import axios  from 'axios'
 
 const Login = () => {
    const [login, setLogin] = useState("");
-   const [pass, setPass] = useState("");
+   const [password, setPassword] = useState("");
 
-   function handleSubmit(event) {
-      event.preventDefault();
-      const loginPayload = {Username: login, Password: pass};
+   function handleSubmit(e) {
+      e.preventDefault();
+
+      const loginPayload = {Username: login, Password: password};
       try{
       axios.post("https://localhost:7231/api/authenticate/login", loginPayload).then((response) => {
          if (response.status != 200)
@@ -27,7 +28,7 @@ const Login = () => {
    return(<LoginWrapper>
     <InputLogName placeholder='Введите имя' onChange={(e) => setLogin(e.target.value)}></InputLogName>
     
-    <InputLogPass placeholder='Введите пароль' onChange={(e) => setPass(e.target.value)}></InputLogPass>
+    <InputLogPass placeholder='Введите пароль' onChange={(e) => setPassword(e.target.value)}></InputLogPass>
 
     <SendLogBtn onClick={handleSubmit}>Авторизироваться</SendLogBtn>
  </LoginWrapper>);

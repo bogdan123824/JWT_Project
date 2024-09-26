@@ -9,80 +9,81 @@ interface User {
     role: string;
 }
 
-const UsersComponent = () => {
-    const [users, setUsers] = useState<User[]>([]);
+const UsersDisplay: React.FC = () => {
+    const [userList, setUserList] = useState<User[]>([]);
 
     useEffect(() => {
-        const getToken = localStorage.getItem("token");
+        const token = localStorage.getItem("token");
 
         axios
-            .get("https://localhost:7232/api/" + "users", {
-                headers: { Authorization: `Bearer ${getToken}` }
+            .get("https://localhost:7232/api/users", {
+                headers: { Authorization: `Bearer ${token}` }
             })
-            .then(dat => {
-                console.log(dat);
-                setUsers(dat.data);
+            .then(response => {
+                console.log("Список пользователей:", response.data);
+                setUserList(response.data);
+            })
+            .catch(error => {
+                console.error("Ошибка при загрузке пользователей:", error);
             });
     }, []);
 
-    const changeRole = (userId: number, newRole: string) => {
+    const userRole = (userId: number, newRole: string) => {
+        const token = localStorage.getItem("token");
+        const currentUser = userList.find(user => user.id === userId);
 
-        const getToken = localStorage.getItem("token");
-
-        const user = users.find((x: User) => x.id === userId);
-
-        if (!user) {
+        if (!currentUser) {
             alert("Пользователь не найден");
             return;
         }
 
-        const userPayload = {
-            username: user.username,
+        const updateUser = {
+            username: currentUser.username,
             role: newRole
         };
 
         axios
-            .put("https://localhost:7232/api/users/" + userId, userPayload, {
-                headers: { Authorization: `Bearer ${getToken}` }
+            .put(`https://localhost:7232/api/users/${userId}`, updateUser, {
+                headers: { Authorization: `Bearer ${token}` }
             })
-            .then(dat => {
-                console.log(dat);
+            .then(response => {
+                console.log("Роль пользователя обновлена:", response.data);
+                setUserList(prevList =>
+                    prevList.map(user =>
+                        user.id === userId ? { ...user, role: newRole } : user
+                    )
+                );
+            })
+            .catch(error => {
+                console.error("Ошибка при обновлении роли пользователя:", error);
             });
     };
 
     return (
         <ListGroup as="ul">
-            {users.map(user => (
-                <ListGroup.Item
-                    as="li"
-                    key={user.username}
-                    className="d-flex justify-content-between align-items-start">
-                    <div className="ms-2 me-auto" style={{ height: "4rem" }}>
-                        <div className="fw-bold" style={{ fontSize: "1.2rem" }}>
-                            {user.username}
-                        </div>
-                        <Button
-                            variant="warning"
-                            onClick={() =>
-                                changeRole(
-                                    user.id,
-                                    user.role === "Администратор" ? "Пользователь" : "Администратор"
-                                )
-                            }
-                            style={{
-                                position: "absolute",
-                                right: "1rem",
-                                fontSize: "1rem"
-                            }}>
-                            {user.role === "Администратор"
-                                ? "Понизить до пользователя"
-                                : "Повысить до Администратора"}
-                        </Button>
+            {userList.map(user => (
+                <ListGroup.Item key={user.id} className="d-flex justify-content-between align-items-center">
+                    <div className="user-info">
+                        <strong>{user.username}</strong>
+                        <span className="user-role" style={{ marginLeft: "10px", fontStyle: "italic" }}>
+                            ({user.role})
+                        </span>
                     </div>
+                    <Button
+                        variant={user.role === "Администратор" ? "danger" : "primary"}
+                        onClick={() =>
+                            userRole(
+                                user.id,
+                                user.role === "Администратор" ? "Пользователь" : "Администратор"
+                            )
+                        }
+                    >
+                        {user.role === "Администратор" ? "Понизить до пользователя" : "Повысить до администратора"}
+                    </Button>
                 </ListGroup.Item>
             ))}
         </ListGroup>
     );
 };
 
-export default UsersComponent;
+export default UsersDisplay;

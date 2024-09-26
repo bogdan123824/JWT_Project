@@ -4,83 +4,78 @@ import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-interface Note {
+interface NotesItem {
     id: string;
     title: string;
-    text: string; 
+    text: string;
 }
 
-const Notes = () => {
-    const navigate = useNavigate();
-    const [items, setItems] = useState<Note[]>([]); 
+const NotesPage = () => {
 
-    useEffect(() => {
-        const getToken = localStorage.getItem("token");
+    const navigateTo = useNavigate();
+
+    const [noteList, setNoteList] = useState<NotesItem[]>([]);
+       useEffect(() => {
+        const token = localStorage.getItem("token");
 
         axios
             .get("https://localhost:7232/api/notes", {
-                headers: { Authorization: `Bearer ${getToken}` }
+                headers: { Authorization: `Bearer ${token}` }
             })
-            .then((dat) => {
-                console.log(dat);
-                setItems(dat.data); 
+            .then((response) => {
+                console.log("Полученные заметки:", response.data);
+                setNoteList(response.data);
+            })
+            .catch((error) => {
+                console.error("Ошибка при загрузке заметок:", error);
             });
     }, []);
 
-    const deleteNote = (id: string) => {
-        const getToken = localStorage.getItem("token");
+    const removeNote = (noteId: string) => {
+        const token = localStorage.getItem("token");
 
         axios
-            .delete(`https://localhost:7232/api/notes/${id}`, {
-                headers: { Authorization: `Bearer ${getToken}` }
+            .delete(`https://localhost:7232/api/notes/${noteId}`, {
+                headers: { Authorization: `Bearer ${token}` }
             })
-            .then((res) => {
-                console.log(res);
-                setItems((items) => items.filter((item) => item.id !== id));
+            .then((response) => {
+                console.log("Заметка удалена:", response.data);
+                setNoteList((prevNotes) => prevNotes.filter((note) => note.id !== noteId));
+            })
+            .catch((error) => {
+                console.error("Ошибка при удалении заметки:", error);
             });
     };
 
     return (
-        <>
-            <div
-                style={{
-                    position: "absolute",
-                    top: "4rem",
-                    right: "5rem"
-                }}>
-                <Button variant="success" onClick={() => navigate("/notes/new")}>
-                    Добавить 
+        <div style={{ padding: "2rem" }}>
+            <div style={{ textAlign: "right", marginBottom: "1rem" }}>
+                <Button variant="success" onClick={() => navigateTo("/notes/new")}>
+                    Добавить новую заметку
                 </Button>
             </div>
-                <div
-                    style={{
-                        display: "flex",
-                        marginTop: "4.5rem",
-                        marginBottom: "2rem"
-                    }}>
-                    {items.map((item) => (
-                        <Card key={item.id} style={{ width: "15rem" }}>
-                            <Card.Body>
-                                <Card.Title>{item.title}</Card.Title>
-                                <Card.Text>{item.text}</Card.Text> 
-                                <Button
-                                    variant="warning"
-                                    className="me-1"
-                                    onClick={() => navigate(`/notes/${item.id}`)}>
-                                    Изменить 
-                                </Button>
-                                <Button
-                                    variant="danger"
-                                    className="me-1"
-                                    onClick={() => deleteNote(item.id)}>
-                                    Удалить
-                                </Button>
-                            </Card.Body>
-                        </Card>
-                    ))}
-                </div>
-        </>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "1.5rem" }}>
+                {noteList.map((note) => (
+                    <Card key={note.id} style={{ width: "16rem" }}>
+                        <Card.Body>
+                            <Card.Title>{note.title}</Card.Title>
+                            <Card.Text>{note.text}</Card.Text>
+                            <Button
+                                variant="primary"
+                                className="me-2"
+                                onClick={() => navigateTo(`/notes/${note.id}`)}
+                            >
+                                Редактировать
+                            </Button>
+                            <Button variant="danger" onClick={() => removeNote(note.id)}>
+                                Удалить
+                            </Button>
+                        </Card.Body>
+                    </Card>
+                ))}
+            </div>
+        </div>
     );
 };
 
-export default Notes;
+export default NotesPage;

@@ -5,11 +5,12 @@ import { RegisterWrapper,InputEmail, InputName, InputPass,SendBtn } from './Regi
 const Register  = () => {
    const [email, setEmail] = useState("");
    const [login, setLogin] = useState("");
-   const [pass, setPass] = useState("");
+   const [password, setPassword] = useState("");
 
-   function handleSubmit(event) {
-      event.preventDefault();
-      const loginPayload = {Username: login, Email: email, Password: pass};
+   function handleSubmit(e) {
+      e.preventDefault();
+
+      const loginPayload = {Username: login, Email: email, Password: password};
       try{
       axios.post("https://localhost:7231/api/authenticate/register", loginPayload).then((response) => {
          if (response.status != 200)
@@ -29,7 +30,7 @@ const Register  = () => {
     
     <InputName placeholder='Введите имя' onChange={(e) => setLogin(e.target.value)}></InputName>
     
-    <InputPass placeholder='Введите пароль' onChange={(e) => setPass(e.target.value)}></InputPass>
+    <InputPass placeholder='Введите пароль' onChange={(e) => setPassword(e.target.value)}></InputPass>
 
     <SendBtn onClick={handleSubmit}>Зарегестрироваться</SendBtn>
  </RegisterWrapper>);
